@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SeeAble Privacy Policy — Updated Version</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        max-width: 42rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        color: #111;
+        background: #fff;
+      }
+      a { color: #0b3d91; }
+      h1 { font-size: 1.75rem; line-height: 1.25; }
+      h2 { font-size: 1.35rem; margin-top: 2rem; }
+    </style>
+  </head>
+  <body>
+    <h1>SeeAble Privacy Policy — Updated Version</h1>
+    <p><strong>Last updated:</strong> 11 October 2026<br />
+    <strong>App:</strong> SeeAble (iOS and Android)<br />
+    <strong>Notices covered:</strong> 2026-10 through 2026-11<br />
+    <strong>Publisher:</strong> Selman Fettahoglu<br />
+    <strong>Contact:</strong> <a href="mailto:dmrhnslmn@gmail.com">dmrhnslmn@gmail.com</a></p>
+
+    <h2>What SeeAble does</h2>
+    <p>SeeAble uses your phone's camera to take a photo, sends it with your question to an AI service, and speaks a short answer. It can also read printed text aloud. It is designed for blind and low-vision people. It is not a medical device or a navigation aid, and it cannot confirm that an action is safe.</p>
+
+    <h2>Before anything is sent</h2>
+    <p>The first time you use SeeAble, and again when this processing changes, the app shows a notice explaining what is sent. Your photos and questions are not sent to AI services until you choose Continue. If you choose Do not send, nothing is uploaded, and SeeAble cannot describe photos or read text.</p>
+    <p>People who already accepted notice 2026-10 are shown notice 2026-11 before Reading Mode text is sent to OpenAI to be read aloud. Until they accept 2026-11, that extra send does not happen. Camera questions, Photo Chat, and Reading Mode photos continue under 2026-10.</p>
+
+    <h2>What is sent, and to whom</h2>
+    <p>When you ask a question or read text, the app sends to our server (hosted by Render):</p>
+    <ul>
+      <li>the photo you take (resized on your phone);</li>
+      <li>your question, typed or spoken;</li>
+      <li>earlier questions and answers from the same conversation (up to six), so follow-up questions make sense;</li>
+      <li>a random app ID created on your phone (see below);</li>
+      <li>your own API key, only if you chose to enter one in Settings.</li>
+    </ul>
+    <p>Our server passes this on to AI services:</p>
+    <ul>
+      <li><strong>The AI service chosen in Settings</strong> — Ollama Cloud (the default) or OpenAI — receives the resized photo, your question, and the earlier conversation, and writes the answer. In Reading Mode it receives the photo to read the text.</li>
+      <li><strong>OpenAI, for a separate safety check, even if you chose Ollama Cloud.</strong> It receives your question and a smaller copy of the photo. For some answers it also receives the draft answer text, to check it before it is spoken. Reading Mode does not run that separate safety check.</li>
+      <li><strong>OpenAI, for voice questions.</strong> The microphone recording is sent to OpenAI to turn speech into text.</li>
+      <li><strong>OpenAI, for speaking.</strong> Recorded prompts in the app are already stored on the phone. Spoken answers for Camera and Photo Chat, and Reading Mode text after you accept notice 2026-11, are sent as text to OpenAI to be read aloud in an AI voice. The photo and the microphone recording are not sent to OpenAI for that speech step. They may still be processed separately, as described above. This notice, lines without a recording, and any moment the AI voice cannot be used are spoken with the phone’s own voice.</li>
+    </ul>
+
+    <h2>What is stored</h2>
+    <ul>
+      <li><strong>Photos and recordings on our server</strong> are written to temporary files only while a request is handled. The server build for this policy deletes them when the request finishes — whether it succeeds, is rejected, fails, or the app disconnects. If the server stops unexpectedly in the middle of a request, leftover files are removed when it restarts or within about 70 minutes. We do not keep backups of these files.</li>
+      <li><strong>Copies sent to AI services</strong> are not controlled by our server. Deleting our temporary files does not delete what OpenAI or Ollama Cloud received; their own retention terms apply (see below).</li>
+      <li><strong>The app ID</strong> is a random code created on your phone. It is not your name, email, phone number, or a device identifier. Our server stores it with a count of free requests, to apply usage limits. Clearing the app's data creates a new ID.</li>
+      <li><strong>Server logs</strong> record technical details such as timing, request type, and error codes. They do not record your photos, questions, or answers. Like any web service, our host can see the network address a request comes from.</li>
+      <li><strong>On your phone</strong>, the current conversation and reading text are cleared when you leave the app. Your settings, including any API key you entered, stay on the phone until you remove them.</li>
+    </ul>
+    <p>We do not create accounts, and we do not use advertising, analytics, or tracking tools.</p>
+
+    <h2>What the AI services say about your data</h2>
+    <p>Checked against their public pages on 8 October 2026:</p>
+    <ul>
+      <li><strong>OpenAI</strong> says data sent to its API is not used to train its models unless the customer opts in, and that it may be kept for up to 30 days for abuse monitoring. SeeAble's account setting has not been separately confirmed, so assume the standard 30-day abuse-monitoring retention applies. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's data guide</a>.</li>
+      <li><strong>Ollama</strong> says cloud prompts and answers are processed only to provide the service, are not kept beyond the request, and are not used for training. See <a href="https://ollama.com/privacy">Ollama's privacy page</a>.</li>
+      <li><strong>Render</strong> hosts our server and processes requests on our behalf. See <a href="https://render.com/privacy">Render's privacy page</a>.</li>
+    </ul>
+    <p>These companies process data under their own terms.</p>
+
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not sell your photos, questions, recordings, or answers.</li>
+      <li>We do not use them for advertising or tracking.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>SeeAble is not directed at children under 13 and does not knowingly collect their information.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can choose Do not send on the notice; nothing is uploaded.</li>
+      <li>You can hear the notice again in Settings → How your data is used.</li>
+      <li>You can remove an API key you entered in Settings.</li>
+      <li>Deleting the app removes everything stored on your phone. Because we keep no account and no copy of your photos or questions, there is nothing else to delete. To ask about the app ID count, email <a href="mailto:dmrhnslmn@gmail.com">dmrhnslmn@gmail.com</a>.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>This updated version covers notices 2026-10 and 2026-11. The address of this page stays the same. If we change what is sent or to whom, we will update this page and show the in-app notice again before anything new is sent.</p>
+  </body>
+</html>
